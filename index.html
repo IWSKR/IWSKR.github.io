@@ -175,11 +175,10 @@
                </div>
            </section>
 
-            <p><input
-     type="button"
-     onclick="document.getElementById('myTextArea').value += '•'"
-     value="Add •" /> Prof. Eneko Agirre: "<b>Few-shot Information Extraction:  Pre-train, prompt and entail</b>"</p>
-<textarea id="myTextArea">
+<ul>
+  <li>
+            <p>Prof. Eneko Agirre: "<b>Few-shot Information Extraction:  Pre-train, prompt and entail</b>"</p>
+
 <p><b>Abstract</b>: Deep Learning has made tremendous progress in Natural Language Processing (NLP), where large pre-trained language models (PLM) fine-tuned on the target task have become the predominant tool. More recently, in a process called prompting, NLP tasks are rephrased as natural language text, allowing us to better exploit linguistic knowledge learned by PLMs and resulting in significant improvements. Still, PLMs have limited inference ability. In the Textual Entailment task, systems need to output whether the truth of a certain textual hypothesis follows from the given premise text.  Manually annotated entailment datasets covering multiple inference phenomena have been used to infuse inference capabilities to PLMs. This talk will review these recent developments, and will present an approach that combines prompts and PLMs fine-tuned for textual entailment that yields state-of-the-art results on Information Extraction (IE) using only a small fraction of the annotations. The approach has additional benefits, like the ability to learn from different schemas and inference datasets. These developments enable a new paradigm for IE where the expert can define the domain-specific schema using natural language and directly run those specifications, annotating a handful of examples in the process. A user interface based on this new paradigm will also be presented. Beyond IE, inference capabilities could be extended, acquired and applied from other tasks, opening a new research avenue where entailment and downstream task performance improve in tandem.</p>
 
 <p><b>Bio</b>: Eneko Agirre is a Professor of Informatics and Head of HiTZ Basque Center of Language Technnology at
@@ -188,7 +187,57 @@
   and is one of the 74 fellows of the Association of Computational Linguistics (ACL). He was President of ACL's
   SIGLEX, member of the editorial board of Computational Linguistics, Journal of Artificial Intelligence Research
   and Action editor for the Transactions of the ACL. He is co-founder of the Joint Conference on Lexical and
-  Computational Semantics (*SEM). Recipient of three Google Research Awards and five best paper awards and nominations. Dissertations under his supervision received best PhD awards by EurAI, the Spanish NLP society and the Spanish Informatics Scientific Association. He has over 200 publications across a wide range of NLP and AI topics. His research spans topics such as Word Sense Disambiguation, Semantic Textual Similarity, Unsupervised Machine Translation and resources for Basque. Most recently his research focuses on inference and deep learning language models.</p></textarea>
+  Computational Semantics (*SEM). Recipient of three Google Research Awards and five best paper awards and nominations. Dissertations under his supervision received best PhD awards by EurAI, the Spanish NLP society and the Spanish Informatics Scientific Association. He has over 200 publications across a wide range of NLP and AI topics. His research spans topics such as Word Sense Disambiguation, Semantic Textual Similarity, Unsupervised Machine Translation and resources for Basque. Most recently his research focuses on inference and deep learning language models.</p>
+  </li>
+
+  <li>
+            <p>Prof. Heng Ji: "<b>Few-shot Event Argument Extraction via Natural Language or Programming Language Generation</b>"</p>
+
+<p><b>Abstract</b>: The goal of the event argument role labeling task is to find finding the arguments
+  (participants) of an event. Traditional methods model this task as a supervised classification problem
+  that requires a large amount of training data (around 4,000 fully annotated sentences). By contrast,
+  when humans know some events happened (e.g., Halloween parade in Champaign), they would expect to know a
+  list of arguments - attendees, time, location, organizer, etc., actively seek information to fill in these
+  slots by reading news or social media, and then they will be able to describe the information about these
+  arguments to their friends. Therefore, if an intelligent information system knows how to narrate an event,
+  it should be able to fill in the slots for the expected argument roles. We propose to re-frame the problem
+  as conditional generation given a template (a list of arguments for each event type). Conditioned on the
+  unfilled template and a given natural language context, the model is asked to generate a filled-in template
+  with arguments. We can train this generator using a large language model learned from natural language, or,
+  even better, from programming language, both of which are readily available. For example, event-argument
+  structures can be represented as a class object using code. This alignment between structures and code
+  enables us to take advantage of Programming Language features such as inheritance and type annotation to
+  introduce external knowledge or add constraints. Our model does not require any substantial amount of
+  annotations for the information extraction task, and thus it's highly effective for zero-shot or
+  few-shot settings. Also it can work with long contexts beyond single sentences, and bring us one step
+  closer to the original goal of information extraction - constructing a knowledge base from the entire corpus.
+  When only using 50 training instances for each event type, our framework is comparable to fully-supervised
+  models trained on 4,202 event instances. When given the same 50-shot data, our approach outperforms current
+  state-of-the-art (SOTA) by 20.8% absolute F1.</p>
+
+<p><b>Bio</b>: Heng Ji is a professor at Computer Science Department, and an affiliated faculty member at
+  Electrical and Computer Engineering Department of University of Illinois at Urbana-Champaign. She is also an
+  Amazon Scholar. She received her B.A. and M. A. in Computational Linguistics from Tsinghua University,
+  and her M.S. and Ph.D. in Computer Science from New York University. Her research interests focus on
+  Natural Language Processing, especially on Multimedia Multilingual Information Extraction, Knowledge
+  Base Population and Knowledge-driven Generation. She was selected as "Young Scientist" and a member of
+  the Global Future Council on the Future of Computing by the World Economic Forum in 2016 and 2017.
+  She was named as part of Women Leaders of Conversational AI (Class of 2023) by Project Voice. The awards
+  she received include "AI's 10 to Watch" Award by IEEE Intelligent Systems in 2013, NSF CAREER award in 2009,
+  PACLIC2012 Best paper runner-up, "Best of ICDM2013" paper award, "Best of SDM2013" paper award, ACL2018
+  Best Demo paper nomination, ACL2020 Best Demo Paper Award, NAACL2021 Best Demo Paper Award, Google Research
+  Award in 2009 and 2014, IBM Watson Faculty Award in 2012 and 2014 and Bosch Research Award in 2014-2018.
+  She was invited by the Secretary of the U.S. Air Force and AFRL to join Air Force Data Analytics Expert
+  Panel to inform the Air Force Strategy 2030. She is the lead of many multi-institution projects and tasks,
+  including the U.S. ARL projects on information fusion and knowledge networks construction, DARPA DEFT
+  Tinker Bell team and DARPA KAIROS RESIN team. She has coordinated the NIST TAC Knowledge Base Population
+  task since 2010. She was the associate editor for IEEE/ACM Transaction on Audio, Speech, and Language
+  Processing, and served as the Program Committee Co-Chair of many conferences including NAACL-HLT2018
+  and AACL-IJCNLP2022. She is elected as the North American Chapter of the Association for Computational
+  Linguistics (NAACL) secretary 2020-2023. Her research has been widely supported by the U.S. government
+  agencies (DARPA, ARL, IARPA, NSF, AFRL, DHS) and industry (Amazon, Google, Facebook, Bosch, IBM, Disney). </p>
+  </li>
+  </ul>
 
             <h2 id="schedule">Schedule</h2>
 
